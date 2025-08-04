@@ -16,7 +16,6 @@ public class Practice {
 			
 			Connection con = DriverManager.getConnection(URL, user , pwd);
 			Statement st = con.createStatement();
-			
 			ResultSet rs = st.executeQuery("select * from Students;");
 			while(rs.next()) {
 				int ID =  rs.getInt(1);
